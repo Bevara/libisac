@@ -1,0 +1,17 @@
+{
+    "name": "libisac",
+    "description": "iSAC wideband speech decoder",
+    "filters":["isacdec"],
+    "help": "This filter decodes iSAC, the wideband speech codec of WebRTC, from the bitstream dump format of WebRTC's own test program. iSAC was removed from WebRTC in 2022 and has no standalone library; the sources are the last consistent snapshot.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libisac.accessor",
+    "filter_source":{
+        "isacdec" : "dec_isac.c"
+    },
+    "extension":{
+      "isac" : "audio"
+    },
+    "licence_required":false
+}
